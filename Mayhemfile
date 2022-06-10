@@ -1,0 +1,7 @@
+project: dg
+target: llvm-slicer
+testsuite:
+  - file://test.bc
+cmds:
+  - cmd: /opt/dg/bin/llvm-slicer /test.bc -c ret
+    filepath: /test.bc
